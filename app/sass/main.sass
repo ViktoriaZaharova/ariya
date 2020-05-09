@@ -1,0 +1,708 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 15px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  background: #fff
+  color: #313131
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  transition: .3s ease
+  text-decoration: none
+
+input
+  outline: none
+  box-shadow: none
+  box-sizing: border-box
+  padding: 0 21px
+  font-family: $default-font
+  width: 100%
+  border: none
+    radius: 20px
+  background: #ffffff
+  height: 31px
+  color: #313131
+  font-size: 13px
+  &::placeholder
+    color: #313131
+
+
+textarea
+  font-family: $default-font
+  outline: none
+  box-shadow: none
+  box-sizing: border-box
+  padding: 0 21px
+  border: solid 2px #ffffff
+    radius: 20px
+  height: 31px
+  background: transparent
+  width: 100%
+  color: #313131
+  font-size: 13px
+  &::placeholder
+    color: #313131
+
+
+select
+  outline: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  border: none
+    radius: 20px
+  padding: 0 21px
+  width: 100%
+  height: 31px
+  font-family: $default-font
+  color: #313131
+  font-size: 13px
+  cursor: pointer
+  background: #fff url("../img/arrow.png") no-repeat 95% center
+    size: 10px
+  &::placeholder
+    color: #313131
+
+button
+  outline: none
+  border: none
+    radius: 0
+  padding: 0
+  box-sizing: border-box
+  transition: .3s ease
+  cursor: pointer
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  color: #ffffff
+  font-size: 13px
+  font-weight: bold
+
+.btn-accent
+  text-transform: uppercase
+  width: 123px
+  height: 31px
+  border-radius: 15px
+  border: solid 2px #ffffff
+  background: #0092ca
+  &:hover
+    background: #fff
+    color: #313131
+
+.btn-border
+  width: 131px
+  height: 31px
+  border: solid 2px #ffffff
+    radius: 20px
+  font-size: 13px
+  font-weight: bold
+  background: transparent
+  color: #fff
+  &:hover
+    background: #fff
+    color: #0092ca
+
+
+.container
+  width: 100%
+  max-width: 1160px
+  margin: 0 auto
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  z-index: 1
+
+.logo
+  width: 165px
+  height: 193px
+  margin: 0 0 -130px
+  position: relative
+  background: #0092ca
+  border-radius: 0 0 100px 100px
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  padding: 0 12px 15px
+
+h2
+  margin: 0 0 27px
+  width: 100%
+  font-weight: bold
+  font-size: 21px
+
+strong
+  display: inline
+  font-weight: bold
+
+.links
+  color: #0092ca
+  font-size: 13px
+  &:hover
+    text-decoration: underline
+
+.links-accent
+  color: #0092ca
+  font-size: 15px
+  text-decoration: underline
+  width: fit-content
+  &:hover
+    text-decoration: none
+
+
+//header
+header
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 3
+  background: #fff
+  width: 100%
+  .header-box
+    margin: 0 auto 0 30px
+
+.header-top
+  .container
+    align-items: center
+    justify-content: space-between
+  .search-btn
+    display: none
+
+.links-group
+  margin: 0 145px 0 0
+  display: flex
+  align-items: center
+  a
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+
+.header-bottom
+  background: #4b5159
+  padding: 16px 0
+  .container
+    justify-content: flex-end
+    align-items: center
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 14px
+
+.menu-item
+  margin: 0 55px 0 0
+
+.menu-links
+  color: #fff
+  &:hover
+    text-decoration: underline
+
+.search-btn
+  width: 17px
+  height: 17px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.header-box
+  display: flex
+  align-items: center
+  font-size: 12px
+  .icon
+    margin: 0 11px 0 0
+    width: 14px
+    height: 19px
+  p
+    max-width: 167px
+  
+.phone
+  display: flex
+  align-items: center
+  font-size: 15px
+  color: #313131
+  .icon
+    margin: 0 12px 0 0
+    width: 12px
+    height: 19px
+  strong
+    margin: 0 0 0 5px
+
+
+
+//main
+main
+  padding: 110px 0 0
+  height: 549px
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+//news
+.news
+  padding: 37px 0
+  .links-accent
+    margin: 0 0 0 auto
+
+.w-100
+  width: 100%
+
+.news-wrapper
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+
+.news-box
+  transition: .3s ease
+  padding: 16px 20px 23px
+  margin: 0 0 10px
+  max-width: 375px
+  width: 100%
+  background: #fff
+  font-size: 14px
+  &:hover
+    box-shadow: 1.9px 6.7px 38px 0 rgba(11, 11, 9, 0.15)
+  .text
+    margin: 0 0 16px
+
+.date
+  display: flex
+  align-items: center
+  width: 100%
+  margin: 0 0 18px
+  color: #c3c7c4
+  font-size: 13px
+  font-weight: bold
+  .icon
+    width: 17px
+    height: 18px
+    margin: 0 11px 0 0
+
+//about
+.about
+  border-top: solid 1px #c3c7c4
+  padding: 35px 0 29px
+  font-size: 15px
+  h2
+    margin: 0 0 32px
+  .container
+    align-items: flex-start
+
+.about-content
+  width: calc(100% - 360px)
+  padding: 0 0 0 30px
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+.photo-wrapper
+  width: 360px
+  position: relative
+
+
+.seal
+  width: 140px
+  left: 0
+  bottom: 0
+  position: absolute
+
+.photo
+  width: 100%
+  height: 395px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.about-bottom
+  margin: 20px 0 0
+  display: flex
+  align-items: center
+  .text
+    max-width: 270px
+    margin: 0 10px 0 0
+    h3
+      color: #0091ca
+      font-weight: bold
+
+//subscribe
+.subscribe
+  padding: 36px 0 30px
+  position: relative
+  background: #0092ca
+  color: #fff
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 100%
+    height: 100%
+    background: url("../img/bg1.jpg") no-repeat center
+      size: cover
+    opacity: .3
+
+.box-title
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 21px
+  .icon
+    width: 66px
+    height: 66px
+    display: flex
+    align-items: center
+    justify-content: center
+  .text
+    width: calc(100% - 66px)
+    padding: 0 0 0 13px
+    font-size: 15px
+  h2
+    margin: 0 0 15px
+
+.form
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  flex-wrap: wrap
+  label
+    width: 360px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin: 0 0 15px
+    &:last-child
+      margin: 0
+  .label-message
+    width: calc(100% - 123px)
+    margin: 0
+
+.input-title
+  display: inline-block
+  width: 100%
+  padding: 0 0 10px 10px
+  font-size: 13px
+  font-weight: bold
+
+label
+  display: block
+
+.box-thanks
+  margin: 23px 0 0 auto
+  max-width: 260px
+
+.label-message
+  width: calc(100% - 123px)
+  padding: 0 21px 0 0
+
+.useful-links
+  padding: 37px 0
+  h2
+    margin: 0 0 15px
+
+.useful-links__wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.useful-links__box
+  margin: 0 0 12px
+  display: flex
+  align-items: center
+  &:hover
+    color: #2a2859
+  p
+    max-width: 140px
+    text-transform: uppercase
+    font-size: 11px
+    font-weight: bold
+    margin: 0 0 0 8px
+    span
+      font-size: 9px
+      display: block
+
+//contacts-section
+.contacts-section
+  width: 100%
+  position: relative
+  padding: 90px 0 84px
+
+.maps
+  width: 100%
+  height: 454px
+  position: absolute
+  left: 0
+  top: 0
+  iframe
+    width: 100%
+    height: 100%
+
+.contacts-box
+  width: 362px
+  height: 280px
+  box-shadow: 2.8px 9.6px 15px 0 rgba(11, 11, 9, 0.15)
+  background-color: #ffffff
+  h2
+    margin: 0
+    padding: 21px 36px 20px
+    border-bottom: 1px solid #c3c7c4
+  .phone
+    margin: 15px 0
+
+.mail
+  display: flex
+  align-items: center
+  font-size: 12px
+  color: #313131
+  .icon
+    margin: 0 9px 0 0
+
+.contacts-box__body
+  padding: 24px 33px 34px
+
+.name-company
+  margin: 0 0 15px
+  color: #313131
+  font-size: 13px
+  font-weight: bold
+  text-transform: uppercase
+
+//footer
+footer
+  background: #424242
+  color: #fff
+  padding: 25px 0
+  .container
+    justify-content: space-between
+    align-items: center
+
+.footer-box
+  p
+    font-weight: bold
+    margin: 0 0 15px
+
+.box-social
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  font-size: 10px
+  
+.list-social
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 5px
+  li
+    margin: 0 9px 0 0
+    &:last-child
+      margin: 0
+    a
+      background: #fff
+      border-radius: 50%
+      width: 32px
+      height: 32px
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.form-subscribe
+  max-width: 360px
+  width: 100%
+  label
+    width: 224px
+    margin: 0 5px 0 0
+  .checkbox
+    width: 100%
+    margin: 0
+    flex-direction: row
+    align-items: center
+
+.checkbox
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  flex-wrap: nowrap
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    width: 9px
+    min-width: 9px
+    height: 9px
+    display: inline-block
+    vertical-align: middle
+    border: none
+      radius: 2px
+    background: #ffffff
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 7px 0 0
+  .label
+    display: inline-block
+    vertical-align: middle
+    color: #fff
+    font-size: 10px
+    cursor: pointer
+  .checkbox-inp:checked + .checkbox-custom
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      width: 3.5px
+      height: 3.5px
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      background: #2a2859
+  a
+    display: inline
+    text-decoration: underline
+    color: #fff
+  
+.consent
+  width: 100%
+  margin: 7px 0 0
+
+.mobile-menu
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 10
+  padding: 30px
+  overflow-y: auto
+  background: #4b5159
+  .menu
+    flex-direction: column
+    align-items: flex-start
+    li
+      margin: 0 0 10px
+      a
+        font-size: 15px
+  .phone
+    color: #fff
+    margin: 20px 0 0
+
+.btn-close
+  position: relative
+  width: 20px
+  height: 20px
+  margin: 0 0 20px auto
+  &:before, &:after
+    content: ''
+    position: absolute
+    background: #fff
+    width: 2px
+    height: 100%
+  &:before
+    left: 8.5px
+    transform: rotate(40deg)
+  &:after
+    right: 8.5px
+    transform: rotate(135deg)
+
+
+.btn-burger
+  width: 20px
+  display: none
+  span
+    display: block
+    width: 100%
+    height: 2px
+    background: #000
+    margin: 0 0 4px
+    &:last-child
+      margin: 0
+
+
+@import "media"
+// Всегда в конце

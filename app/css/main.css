@@ -808,7 +808,8 @@ footer {
   z-index: 10;
   padding: 30px;
   overflow-y: auto;
-  background: #4b5159; }
+  background: #4b5159;
+  display: none; }
   .mobile-menu .menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

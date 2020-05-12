@@ -622,6 +622,9 @@ label {
   width: 100%;
   position: relative;
   padding: 90px 0 84px; }
+  .contacts-section .container {
+    position: initial;
+    z-index: 0; }
 
 .maps {
   width: 100%;
@@ -638,7 +641,9 @@ label {
   height: 280px;
   -webkit-box-shadow: 2.8px 9.6px 15px 0 rgba(11, 11, 9, 0.15);
           box-shadow: 2.8px 9.6px 15px 0 rgba(11, 11, 9, 0.15);
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1; }
   .contacts-box h2 {
     margin: 0;
     padding: 21px 36px 20px;

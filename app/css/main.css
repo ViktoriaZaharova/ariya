@@ -377,6 +377,11 @@ main {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+  main .slick-slide {
+    height: 439px; }
+
+.slick-slide {
+  outline: none; }
 
 .news {
   padding: 37px 0; }
@@ -891,6 +896,8 @@ footer {
   main {
     height: auto;
     padding: 100px 0 0; }
+    main .slick-slide {
+      height: auto; }
   .form label {
     width: 250px; }
   .useful-links__wrapper {
@@ -961,6 +968,8 @@ footer {
     margin: 0 20px 0 auto; }
   main {
     height: 220px; }
+    main .slick-slide {
+      height: 160px; }
   .news-wrapper {
     max-width: 100%; }
   .about-bottom {

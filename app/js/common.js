@@ -6,7 +6,7 @@ $('.btn-close').click(function () {
    $('.mobile-menu').fadeOut();
 });
 
-$('main').slick({
+$('.main').slick({
    arrows: false,
    fade: true,
    autoplay: true,

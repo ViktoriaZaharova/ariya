@@ -111,8 +111,34 @@
   .photo-wrapper
     margin: 0 auto 20px
 
+  .main-page
+    margin: 0 0 20px
 
+  .title-page
+    padding: 0 0 20px
+    margin: 0 0 20px
 
+  .section-news
+    margin: 0 0 30px
+
+  .document-box
+    font-size: 12px
+    width: 180px
+    .icon
+      width: 60px
+
+  .documents, .association
+    margin: 37px 0 30px
+
+  .structure-box
+    width: 220px
+    height: 220px
+    margin: 0 0 30px
+    .number
+      font-size: 50px
+
+  .structure
+    justify-content: space-around
 
 @media only screen and (max-width: 575px)
   header
@@ -130,11 +156,26 @@
     max-width: 100%
 
   .about-bottom
-    flex-direction: column
+    flex-wrap: wrap
     align-items: flex-start
     .text
       max-width: 100%
       margin: 0 0 10px
+    .img
+      order: 1
+
+  .img-print
+    width: 90px
+    order: 1
+
+  .section-about
+    .about-bottom
+      .text
+        padding: 0
+    .img
+      width: 160px
+
+
 
 
 @media only screen and (max-width: 480px)
@@ -189,6 +230,9 @@
   .form-subscribe button
     margin: 0 auto
 
+  .document-box
+    width: 49%
+
 @media only screen and (max-width: 420px)
   .footer-box
     max-width: none
@@ -196,4 +240,12 @@
 
   .box-social
     margin: 0 auto
+
+  .news-box
+    max-width: none
+
+  .name-city
+    font-size: 18px
+
+
 

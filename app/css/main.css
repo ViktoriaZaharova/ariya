@@ -1188,6 +1188,89 @@ footer {
     width: 100%;
     height: 100%; }
 
+.maps-section {
+  width: 100%;
+  height: 454px;
+  margin: 0 0 213px; }
+  .maps-section iframe {
+    width: 100%;
+    height: 100%; }
+
+.section-contacts {
+  padding: 37px 0 46px; }
+  .section-contacts .name-company {
+    width: 100%;
+    font-size: 15px; }
+  .section-contacts .header-box {
+    font-size: 15px;
+    width: 100%;
+    margin: 0 0 19px; }
+    .section-contacts .header-box p {
+      margin: 0;
+      max-width: none; }
+  .section-contacts a {
+    width: 100%;
+    font-size: 15px;
+    margin: 0 0 17px; }
+  .section-contacts p {
+    margin: 0 0 16px; }
+    .section-contacts p:last-child {
+      margin: 0; }
+
+.partners-wrapper {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .partners-wrapper .useful-links__box {
+    margin: 0 0 20px;
+    width: 33%; }
+    .partners-wrapper .useful-links__box p {
+      font-size: 15px;
+      max-width: 315px; }
+    .partners-wrapper .useful-links__box .icon {
+      width: 70px;
+      min-width: 70px; }
+
+.area-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 64px 0; }
+
+.area-box {
+  width: 24%;
+  margin: 0 0 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: solid 1px #dddddd;
+  height: 100px;
+  padding: 19px 25px 14px 16px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; }
+  .area-box__icon {
+    width: 50px;
+    height: 65px;
+    min-width: 50px;
+    margin: 0 20px 0 0; }
+  .area-box p {
+    width: 100%; }
+
 @media only screen and (max-width: 1199px) {
   .container {
     padding: 0 15px; }
@@ -1202,7 +1285,13 @@ footer {
 
 @media only screen and (max-width: 1100px) {
   .footer-box {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .area-box {
+    width: 31%;
+    font-size: 14px; }
+  .area-wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
 
 @media only screen and (max-width: 991px) {
   .logo {
@@ -1228,7 +1317,11 @@ footer {
   .footer-box {
     max-width: 220px; }
     .footer-box p {
-      margin: 0 0 10px; } }
+      margin: 0 0 10px; }
+  .area-box {
+    font-size: 11px; }
+    .area-box__icon {
+      margin: 0 10px 0 0; } }
 
 @media only screen and (max-width: 800px) {
   .news-box {
@@ -1253,7 +1346,11 @@ footer {
     .form-subscribe label {
       margin: 0 auto 10px; }
     .form-subscribe button {
-      margin: 0 10px; } }
+      margin: 0 10px; }
+  .partners-wrapper .useful-links__box {
+    width: 49%; }
+    .partners-wrapper .useful-links__box p {
+      font-size: 13px; } }
 
 @media only screen and (max-width: 767px) {
   .btn-burger {
@@ -1309,7 +1406,12 @@ footer {
   .document-wrapper {
     margin: 30px 0 0; }
   .video-wrapper {
-    height: 450px; } }
+    height: 450px; }
+  .area-box {
+    width: 49%;
+    margin: 0 0 20px; }
+  .area-wrapper {
+    margin: 30px 0 0; } }
 
 @media only screen and (max-width: 575px) {
   header .header-box {
@@ -1346,7 +1448,17 @@ footer {
     width: 160px; }
   .video-wrapper {
     height: 300px;
-    margin: 0 0 20px; } }
+    margin: 0 0 20px; }
+  .section-contacts {
+    padding: 30px 0; }
+    .section-contacts a {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .maps-section {
+    height: 300px;
+    margin: 0 0 30px; }
+  .partners-wrapper .useful-links__box {
+    width: 100%; } }
 
 @media only screen and (max-width: 480px) {
   .links-group {
@@ -1386,7 +1498,9 @@ footer {
   .form-subscribe button {
     margin: 0 auto; }
   .document-box {
-    width: 49%; } }
+    width: 49%; }
+  .area-box {
+    width: 100%; } }
 
 @media only screen and (max-width: 420px) {
   .footer-box {

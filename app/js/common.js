@@ -13,3 +13,5 @@ $('.main').slick({
    autoplaySpeed: 2000,
    adaptiveHeight: true
 });
+
+$('.document-box').fancybox();

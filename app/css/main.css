@@ -1085,6 +1085,109 @@ footer {
       min-width: 27px;
       margin: 0 14px 0 0; }
 
+.line-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 38px; }
+  .line-wrapper .date {
+    margin: 0;
+    width: auto; }
+
+.document-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 46px 0 0; }
+
+.doc-box {
+  width: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-box-shadow: 0 8px 18px 0 rgba(10, 10, 8, 0.15);
+          box-shadow: 0 8px 18px 0 rgba(10, 10, 8, 0.15);
+  margin: 0 0 59px; }
+  .doc-box:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 146, 202, 0.5);
+    opacity: 0;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+  .doc-box:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: url("../img/loupe.png") no-repeat center;
+      background-size: contain;
+    width: 64px;
+    height: 64px;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: .5s ease;
+    transition: .5s ease; }
+  .doc-box:hover:before, .doc-box:hover:after {
+    opacity: 1; }
+
+.source {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 14px; }
+  .source a {
+    display: inline;
+    text-decoration: underline;
+    color: #313131; }
+
+.video-wrapper {
+  width: 100%;
+  height: 644px;
+  margin: 0 0 33px; }
+  .video-wrapper iframe {
+    width: 100%;
+    height: 100%; }
+
 @media only screen and (max-width: 1199px) {
   .container {
     padding: 0 15px; }
@@ -1199,7 +1302,14 @@ footer {
       font-size: 50px; }
   .structure {
     -ms-flex-pack: distribute;
-        justify-content: space-around; } }
+        justify-content: space-around; }
+  .doc-box {
+    width: 48%;
+    margin: 0 0 20px; }
+  .document-wrapper {
+    margin: 30px 0 0; }
+  .video-wrapper {
+    height: 450px; } }
 
 @media only screen and (max-width: 575px) {
   header .header-box {
@@ -1233,7 +1343,10 @@ footer {
   .section-about .about-bottom .text {
     padding: 0; }
   .section-about .img {
-    width: 160px; } }
+    width: 160px; }
+  .video-wrapper {
+    height: 300px;
+    margin: 0 0 20px; } }
 
 @media only screen and (max-width: 480px) {
   .links-group {

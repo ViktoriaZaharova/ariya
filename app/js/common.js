@@ -9,7 +9,7 @@ $('.btn-close').click(function () {
 $('.main').slick({
    arrows: false,
    fade: true,
-   autoplay: true,
+   // autoplay: true,
    autoplaySpeed: 2000,
    adaptiveHeight: true
 });
